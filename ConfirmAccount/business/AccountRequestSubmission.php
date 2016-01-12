@@ -112,7 +112,7 @@ class AccountRequestSubmission {
 		   return;
 	    }
 	    $success = false;
-	    preg_match_all('%<div id="comments-\d+" class="comment +" data-comment-id="\d+">.*?<div class="actions-wrap">.*?<div class="name">\s+<a href="/users/(([a-zA-Z0-9]|-|_)+)">(([a-zA-Z0-9]|-|_)+)</a>\s+</div>\s+<div class="content">(.*?)</div>%ms', $data, $matches);
+	    preg_match_all('%<div id="comments-\d+" class="comment +" data-comment-id="\d+">.*?<div class="actions-wrap">.*?<div class="name">\s+<a href="/users/(([a-zA-Z0-9]|-|_)+)">(([a-zA-Z0-9]|-|_|\*)+)</a>\s+</div>\s+<div class="content">(.*?)</div>%ms', $data, $matches);
 		unset($matches[2]);
 		unset($matches[3]);
 		unset($matches[4]);
