@@ -212,12 +212,12 @@ class RequestAccountPage extends SpecialPage {
 			$form .= '</fieldset>';
 		}
 		
-		//Scratch user verification
-		$form .= '<fieldset>';
+		//Scratch user verification is redacted since Newawe users do not need a Scratch account
+		/* $form .= '<fieldset>';
 		$form .= '<legend>' . $this->msg('requestaccount-user-verification') . '</legend>';
 		$form .= '<p>' . $this->msg('requestaccount-project-info', $this->msg('requestaccount-project-link')->text(), $vercode) . '</p>
 		<p>' . $this->msg('requestaccount-code-troubleshoot') . '</p>' . "\n";
-		$form .= '</fieldset>';
+		$form .= '</fieldset>'; */
 		
 		//Set temporary password
 		$form .= '<fieldset>';
